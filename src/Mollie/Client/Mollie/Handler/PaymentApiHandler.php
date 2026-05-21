@@ -115,10 +115,6 @@ class PaymentApiHandler implements PaymentApiHandlerInterface
      */
     public function createLines(QuoteTransfer $quoteTransfer, string $method): ?DataCollection
     {
-        if (!in_array($method, $this->mollieConfig->getBNPLPaymentMethods())) {
-            return null;
-        }
-
         $items = $quoteTransfer->getItems();
         $currencyCode = $quoteTransfer->getCurrency()->getCode();
 

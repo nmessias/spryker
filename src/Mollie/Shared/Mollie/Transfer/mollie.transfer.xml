@@ -56,7 +56,7 @@
         <property name="mollieMultibancoPayment" type="[]"/>
         <property name="mollieBancomatPayPayment" type="[]"/>
         <property name="mollieBizumPayment" type="[]"/>
-        <property name="mollieBINKPayment" type="[]"/>
+        <property name="mollieBLIKPayment" type="[]"/>
         <property name="molliePayconiqPayment" type="[]"/>
 
         <property name="mollieTrustlyPayment" type="[]"/>
