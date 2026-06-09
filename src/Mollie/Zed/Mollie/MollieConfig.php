@@ -170,6 +170,16 @@ class MollieConfig extends AbstractBundleConfig
     }
 
     /**
+     * @param string $paymentProvider
+     *
+     * @return bool
+     */
+    public function isMollieProvider(string $paymentProvider): bool
+    {
+        return str_starts_with(strtolower($paymentProvider), static::MOLLIE_PAYMENT_PROVIDER);
+    }
+
+    /**
      * @return string
      */
     public function getMolliePluginPackage(): string
